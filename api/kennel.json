@@ -1,0 +1,34 @@
+{
+    "animals": [
+        {
+            "id": 1, "name": "Doodles", "breed": "Poodle"
+        },
+        {
+            "id": 2, "name": "Decker", "breed": "German Sheperd"
+        },
+        {
+             "id": 3, "name": "Esme", "breed": "Pitbull"
+        },
+        {
+            "id": 4, "name": "McGarrett", "breed": "Beagle"
+        },
+        {
+            "id": 5, "name": "Roxy", "breed": "Pit Mix"
+        },
+        {
+            "id": 6, "name": "Lucy", "breed": "Border Collie"
+        },
+        {
+            "id": 7, "name": "Lyla", "breed": "Pomeranian"
+        },
+        {
+            "id": 8, "name": "Gidget", "breed": "Little Mix"
+        },
+        {
+            "id": 9, "name": "Pepper", "breed": "Hot Dog"
+        },
+        {
+            "id": 10, "name": "Layla", "breed": "Coon Hound"
+        }
+    ]
+}
