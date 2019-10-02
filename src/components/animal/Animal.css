@@ -1,11 +1,12 @@
 .card {
   /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 #F2A88D;
+  box-shadow: 0 4px 8px 0#982062;
   transition: 0.3s;
   border-radius: 5px; /* 5px rounded corners */
   background:white;
   margin-bottom: 2em;
   flex: 0 1 24%;
+  background-color: #F29B30;
 }
 
 .card-content {
@@ -29,7 +30,7 @@
 }
 
 .cardButton {
-  background-color:#A60303;
+  background-color:#F29B30;
   border: none;
   color: white;
   text-align: center;
@@ -43,5 +44,5 @@
 }
 
 .card button:hover {
-  background-color:#F20519;
+  background-color:#343779;
 }

@@ -1,40 +1,34 @@
 {
   "animals": [
     {
-      "id": 4,
+      "id": 1,
       "name": "McGarrett",
-      "breed": "Beagle",
-      "photo": "./Images/MG.JPG"
+      "breed": "Beagle/Blue Heeler",
+      "photo": "MG.jpg"
     },
     {
-      "id": 5,
+      "id": 2,
       "name": "Roxy",
       "breed": "Pit Mix",
-      "photo": "./Images/MG.JPG"
+      "photo": "roxy.jpg"
     },
     {
-      "id": 6,
+      "id": 3,
       "name": "Lucy",
       "breed": "Border Collie",
-      "photo": "./Images/MG.JPG"
+      "photo": "lucy.jpg"
     },
     {
-      "id": 7,
-      "name": "Lyla",
-      "breed": "Pomeranian",
-      "photo": "./Images/MG.JPG"
+      "id": 4,
+      "name": "Kaia",
+      "breed": "Papillon",
+      "photo": "kaia.jpg"
     },
     {
-      "id": 8,
-      "name": "Gidget",
-      "breed": "Little Mix",
-      "photo": "./Images/MG.JPG"
-    },
-    {
-      "id": 9,
-      "name": "Pepper",
-      "breed": "Hot Dog",
-      "photo": "./Images/MG.JPG"
+      "name": "stanley",
+      "breed": "beagle",
+      "photo": "stanley.jpg",
+      "id": 6
     }
   ],
   "owners": [

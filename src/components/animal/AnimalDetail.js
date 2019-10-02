@@ -8,6 +8,7 @@ class AnimalDetail extends Component {
   state = {
       name: "",
       breed: "",
+      photo: "",
       loadingStatus: true
   }
   handleDelete = () => {
@@ -25,17 +26,21 @@ class AnimalDetail extends Component {
       this.setState({
         name: animal.name,
         breed: animal.breed,
+        photo: animal.photo,
         loadingStatus: false
       });
     });
   }
 
   render() {
+    if(this.state.loadingStatus) {
+      return <p>Loading...</p>
+    }
     return (
       <div className="card">
         <div className="card-content">
           <picture>
-            <img src={require('./dog.svg')} alt="My Dog" />
+            <img src={require(`../../Images/${this.state.photo}`)} alt="My Dog" />
           </picture>
             <h3>Name: <span style={{ color: 'darkslategrey' }}>{firstLetterCase(this.state.name)}</span></h3>
             <p>Breed: {firstLetterCase(this.state.breed)}</p>

@@ -5,7 +5,7 @@ fieldset {
     border: 0 none;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 5px;
-    background: aliceblue;
+    background-color: #F2A88D;
 }
 
 fieldset input, fieldset button{
@@ -20,9 +20,9 @@ fieldset button {
     max-width: 9em;
     padding: .5em;
     margin: .3em auto;
-    background-color: cornflowerblue;
+    background-color: #982062;
     border: none;
-    color: cornsilk;
+    color: white;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -37,9 +37,9 @@ fieldset label {
     user-select: none;
     cursor: pointer;
 }
-fieldset input:focus + label {
+/* fieldset input:focus + label {
     color: #933;
-}
+} */
 
 fieldset .formgrid {
     display: grid;
@@ -57,4 +57,7 @@ fieldset input, fieldset button {
 
 fieldset .alignRight {
     text-align: right;
+}
+.card {
+    background-color: #982062;
 }
