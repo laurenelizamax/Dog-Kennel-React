@@ -1,9 +1,9 @@
 .card {
   /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(23, 21, 53, 0.769);
+  box-shadow: 0 4px 8px 0 #F2A88D;
   transition: 0.3s;
   border-radius: 5px; /* 5px rounded corners */
-  background: rgb(226, 216, 240);
+  background:white;
   margin-bottom: 2em;
   flex: 0 1 24%;
 }
@@ -16,22 +16,22 @@
   margin-top: 0;
   margin-bottom: .5em;
   font-weight: bold;
-  color: rgb(43, 112, 241);
+  color:white;
 }
 
 .card-content p {
   font-size: 80%;
-  color: darkslategrey;
+  color:white;
 }
 
 .content-petname {
-  color: darkslategrey;
+  color: white;
 }
 
-.card button {
-  background-color: rgb(30, 34, 92);
+.cardButton {
+  background-color:#A60303;
   border: none;
-  color: cornsilk;
+  color: white;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -43,5 +43,5 @@
 }
 
 .card button:hover {
-  background-color: rgb(48, 48, 225);
+  background-color:#F20519;
 }

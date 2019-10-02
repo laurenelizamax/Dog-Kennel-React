@@ -3,12 +3,12 @@ small {
   }
   
   header {
-    background-color:darkblue;
-    border: cornflowerblue solid 3px;
+    background-color:#A60303;
+    border: #F22E3E solid 3px;
   }
   
   .site-title {
-    color: ghostwhite;
+    color: white;
     text-align: center;
   }
   
@@ -23,16 +23,16 @@ small {
     padding: 10px;
     text-align: center;
     font-size: 1.5em;
-    color: cornsilk;
+    color: white;
     box-sizing: border-box;
-    background-color: cornflowerblue;
+    background-color: #F22E3E;
     list-style-type: none;
   }
   
   nav .container a {
-    color: cornsilk;
+    color: white;
   }
   
   nav .container a:hover {
-    color: maroon;
+    color: #260101;
   }

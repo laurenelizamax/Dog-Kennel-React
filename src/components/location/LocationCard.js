@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
+import {firstLetterCase} from '../../modules/helpers'
 
 class LocationCard extends Component {
   render() {
@@ -9,8 +11,10 @@ class LocationCard extends Component {
           {/* <i className="fas fa-home fa-5x"></i> */}
           <img src={require('./location.jpeg')} alt="My Location" />
           </picture>
-          <h3>Location Name: <span className="card-locationname">Oodles of Poodles</span></h3>
-          <p>Address: 500 Puppy Way</p>
+          <h2>Name: <span className="card-locationname">{firstLetterCase(this.props.location.name)}</span></h2>
+          <p>Address: {firstLetterCase(this.props.location.address)}</p>
+          <Link to={`/locations/${this.props.location.id}`}><button>Details</button></Link>
+          <button type="button" onClick={() => this.props.deleteLocation(this.props.location.id)}>Close Location</button>
         </div>
       </div>
     );

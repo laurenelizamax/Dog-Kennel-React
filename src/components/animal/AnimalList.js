@@ -9,9 +9,20 @@ import React, { Component } from 'react'
         state = {
             animals: [],
         }
+        deleteAnimal = id => {
+            AnimalManager.delete(id)
+            .then(() => {
+              AnimalManager.getAll()
+              .then((newAnimals) => {
+                this.setState({
+                    animals: newAnimals
+                })
+              })
+            })
+          }
 
     componentDidMount(){
-        console.log("ANIMAL LIST: ComponentDidMount");
+        // console.log("ANIMAL LIST: ComponentDidMount");
         //getAll from AnimalManager and hang on to that data; put it in state
         AnimalManager.getAll()
         .then((animals) => {
@@ -22,14 +33,26 @@ import React, { Component } from 'react'
     }
 
     render(){
-        console.log("ANIMAL LIST: Render");
+        // console.log("ANIMAL LIST: Render");
 
         return(
+            <>
+            <section className="section-content">
+           <button type="button"
+                   className="formButton"
+                   onClick={() => {this.props.history.push("/animal/new")}}>
+                   Admit Animal
+          </button>
+         </section>
             <div className="container-cards">
         {this.state.animals.map(animal =>
-        <AnimalCard key={animal.id} animal={animal} />
+        <AnimalCard key={animal.id} 
+                                        animal={animal} 
+                                        deleteAnimal={this.deleteAnimal}
+                                        />
       )}
             </div>
+            </>
         )
     }
 }

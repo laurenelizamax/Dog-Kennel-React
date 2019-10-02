@@ -1,34 +1,96 @@
 {
-    "animals": [
-        {
-            "id": 1, "name": "Doodles", "breed": "Poodle"
-        },
-        {
-            "id": 2, "name": "Decker", "breed": "German Sheperd"
-        },
-        {
-             "id": 3, "name": "Esme", "breed": "Pitbull"
-        },
-        {
-            "id": 4, "name": "McGarrett", "breed": "Beagle"
-        },
-        {
-            "id": 5, "name": "Roxy", "breed": "Pit Mix"
-        },
-        {
-            "id": 6, "name": "Lucy", "breed": "Border Collie"
-        },
-        {
-            "id": 7, "name": "Lyla", "breed": "Pomeranian"
-        },
-        {
-            "id": 8, "name": "Gidget", "breed": "Little Mix"
-        },
-        {
-            "id": 9, "name": "Pepper", "breed": "Hot Dog"
-        },
-        {
-            "id": 10, "name": "Layla", "breed": "Coon Hound"
-        }
-    ]
+  "animals": [
+    {
+      "id": 4,
+      "name": "McGarrett",
+      "breed": "Beagle",
+      "photo": "./Images/MG.JPG"
+    },
+    {
+      "id": 5,
+      "name": "Roxy",
+      "breed": "Pit Mix",
+      "photo": "./Images/MG.JPG"
+    },
+    {
+      "id": 6,
+      "name": "Lucy",
+      "breed": "Border Collie",
+      "photo": "./Images/MG.JPG"
+    },
+    {
+      "id": 7,
+      "name": "Lyla",
+      "breed": "Pomeranian",
+      "photo": "./Images/MG.JPG"
+    },
+    {
+      "id": 8,
+      "name": "Gidget",
+      "breed": "Little Mix",
+      "photo": "./Images/MG.JPG"
+    },
+    {
+      "id": 9,
+      "name": "Pepper",
+      "breed": "Hot Dog",
+      "photo": "./Images/MG.JPG"
+    }
+  ],
+  "owners": [
+    {
+      "id": 1,
+      "name": "Lauren",
+      "dog": "McGarrett"
+    },
+    {
+      "id": 2,
+      "name": "Heidi",
+      "dog": "Jerry"
+    },
+    {
+      "id": 3,
+      "name": "Dylan",
+      "dog": "Nixon"
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "name": "Dr. Dave",
+      "job": "Vet"
+    },
+    {
+      "id": 2,
+      "name": "Jim",
+      "job": "Vet Assistant"
+    },
+    {
+      "id": 3,
+      "name": "Bobby",
+      "job": "Vet Helper"
+    },
+    {
+      "name": "Lauren",
+      "job": "Vet",
+      "id": 4
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "name": "Ooodles of Poodles",
+      "address": "400 Poodle Way"
+    },
+    {
+      "id": 2,
+      "name": "baskets of Beagles",
+      "address": "200 Beagle Blvd"
+    },
+    {
+      "id": 3,
+      "name": "party of Pits",
+      "address": "500 Pitty Park"
+    }
+  ]
 }
