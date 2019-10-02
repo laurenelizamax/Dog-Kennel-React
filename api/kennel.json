@@ -17,6 +17,18 @@
       "breed": "beagle",
       "photo": "stanley.jpg",
       "id": 6
+    },
+    {
+      "name": "Lucy",
+      "breed": "Border Collie",
+      "photo": "lucy.jpg",
+      "id": 7
+    },
+    {
+      "name": "Roxy",
+      "breed": "Pit Mix",
+      "photo": "roxy.jpg",
+      "id": 8
     }
   ],
   "owners": [
@@ -39,7 +51,7 @@
   "employees": [
     {
       "id": 1,
-      "name": "Dr. Dave llll",
+      "name": "Dr. Dave ",
       "job": "Vet"
     },
     {

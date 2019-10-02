@@ -34,7 +34,7 @@ class EmployeeDetail extends Component {
       <div className="card">
         <div className="card-content">
           <picture>
-          <img src={require('./employee.jpeg')} alt="employee" />
+          <img src={require('../../Images/vet.jpg')} alt="employee" />
           </picture>
             <h3>Name: <span style={{ color: 'darkslategrey' }}>{firstLetterCase(this.state.name)}</span></h3>
             <p>Job: {firstLetterCase(this.state.job)}</p>

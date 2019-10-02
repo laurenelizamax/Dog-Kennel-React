@@ -10,6 +10,7 @@ small {
   .site-title {
     color: white;
     text-align: center;
+    font-size: 2.5em;
   }
   
   nav .container {
@@ -22,7 +23,7 @@ small {
     flex: 1;
     padding: 10px;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.75em;
     color: white;
     box-sizing: border-box;
     background-color: #146173;
@@ -34,5 +35,5 @@ small {
   }
   
   nav .container a:hover {
-    color: black;
+    color: #592B20;
   }

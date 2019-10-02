@@ -33,7 +33,7 @@ class LocationDetail extends Component {
         <div className="card">
           <div className="card-content">
             <picture>
-            <img src={require('./location.jpeg')} alt="My Location" />
+            <img src={require('../../Images/location.jpg')} alt="location" />
             </picture>
             <h3>Name: <span style={{ color: 'darkslategrey' }}>{firstLetterCase(this.state.name)}</span></h3>
             <p>Breed: {firstLetterCase(this.state.address)}</p>

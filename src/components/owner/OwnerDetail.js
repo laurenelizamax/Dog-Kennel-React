@@ -33,7 +33,7 @@ class OwnerDetail extends Component {
       <div className="card">
         <div className="card-content">
           <picture>
-          <img src={require('./owner.jpeg')} alt="Owner" />
+          <img src={require('../../Images/owner.jpeg')} alt="owner" />
           </picture>
           <h3>Name: <span style={{ color: 'darkslategrey' }}>{firstLetterCase(this.state.name)}</span></h3>
             <p>Pet Name:{firstLetterCase(this.state.dog)}</p>

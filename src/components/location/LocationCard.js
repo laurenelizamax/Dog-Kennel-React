@@ -9,14 +9,14 @@ class LocationCard extends Component {
         <div className="card-content">
           <picture>
           {/* <i className="fas fa-home fa-5x"></i> */}
-          <img src={require('./location.jpeg')} alt="My Location" />
+          <img src={require('../../Images/location.jpg')} alt="employee" />
           </picture>
           <h2>Name: <span className="card-locationname">{firstLetterCase(this.props.kennelLocation.name)}</span></h2>
           <p>Address: {firstLetterCase(this.props.kennelLocation.address)}</p>
-          <Link to={`/locations/${this.props.kennelLocation.id}`}><button>Details</button></Link>
-          <button type="button"
+          <Link to={`/locations/${this.props.kennelLocation.id}`}><button className="cardButton">Details</button></Link>
+          <button type="button" className="cardButton"
         onClick={() => {this.props.history.push(`/locations/${this.props.kennelLocation.id}/edit`)}}>Edit</button>
-          <button type="button" onClick={() => this.props.deleteLocation(this.props.kennelLocation.id)}>Close Location</button>
+          <button type="button" className="cardButton" onClick={() => this.props.deleteLocation(this.props.kennelLocation.id)}>Close Location</button>
         </div>
       </div>
     );

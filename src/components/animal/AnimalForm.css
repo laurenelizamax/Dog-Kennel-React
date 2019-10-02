@@ -20,7 +20,7 @@ fieldset button {
     max-width: 9em;
     padding: .5em;
     margin: .3em auto;
-    background-color: #982062;
+    background-color: #592B20;
     border: none;
     color: white;
     text-align: center;
@@ -62,5 +62,8 @@ fieldset .alignRight {
     background-color:#592B20;
 }
 button {
+    color: #1C818C;
+}
+fieldset button:hover {
     color: #1C818C;
 }
