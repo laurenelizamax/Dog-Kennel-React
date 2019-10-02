@@ -49,6 +49,7 @@ import React, { Component } from 'react'
         <EmployeeCard key={employee.id} 
                                               employee={employee} 
                                               deleteEmployee={this.deleteEmployee}
+                                              {...this.props}
                                               />
       )}
             </div>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import AnimalManager from '../../modules/AnimalManager';
 import {firstLetterCase} from '../../modules/helpers'
+// import { Redirect } from "react-router-dom";
 import './AnimalDetail.css'
 
 class AnimalDetail extends Component {
@@ -33,9 +34,8 @@ class AnimalDetail extends Component {
   }
 
   render() {
-    if(this.state.loadingStatus) {
-      return <p>Loading...</p>
-    }
+    if (this.state.loadingStatus)  return <p>Loading...</p>
+  
     return (
       <div className="card">
         <div className="card-content">
@@ -48,7 +48,13 @@ class AnimalDetail extends Component {
         </div>
       </div>
     );
-  }
-}
+    }}
 
 export default AnimalDetail;
+      // if (!this.state.loadingStatus && this.state.isAnimalValid) {
+
+//   } else {
+//     return <Redirect to="/"/>
+//     }
+//   }
+// }

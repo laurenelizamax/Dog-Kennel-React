@@ -7,18 +7,6 @@
       "photo": "MG.jpg"
     },
     {
-      "id": 2,
-      "name": "Roxy",
-      "breed": "Pit Mix",
-      "photo": "roxy.jpg"
-    },
-    {
-      "id": 3,
-      "name": "Lucy",
-      "breed": "Border Collie",
-      "photo": "lucy.jpg"
-    },
-    {
       "id": 4,
       "name": "Kaia",
       "breed": "Papillon",
@@ -39,7 +27,7 @@
     },
     {
       "id": 2,
-      "name": "Heidi",
+      "name": "Heidi ",
       "dog": "Jerry"
     },
     {
@@ -51,7 +39,7 @@
   "employees": [
     {
       "id": 1,
-      "name": "Dr. Dave",
+      "name": "Dr. Dave llll",
       "job": "Vet"
     },
     {

@@ -47,8 +47,9 @@ import React, { Component } from 'react'
             <div className="container-cards">
         {this.state.locations.map(location =>
         <LocationCard key={location.id} 
-                                            location={location}
+                                            kennelLocation={location}
                                             deleteLocation={this.deleteLocation}
+                                            {...this.props}
                                             />
       )}
             </div>

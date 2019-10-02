@@ -3,9 +3,9 @@ fieldset {
     padding: 4px;
     margin: 2em auto;
     border: 0 none;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 black);
     border-radius: 5px;
-    background-color: #F2A88D;
+    background-color: #1C788C;
 }
 
 fieldset input, fieldset button{
@@ -59,5 +59,8 @@ fieldset .alignRight {
     text-align: right;
 }
 .card {
-    background-color: #982062;
+    background-color:#592B20;
+}
+button {
+    color: #1C818C;
 }

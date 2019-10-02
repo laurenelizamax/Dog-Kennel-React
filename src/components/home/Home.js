@@ -4,7 +4,9 @@ class Home extends Component {
     render () {
         return (
             <div>
-                <h2>Student Kennels<br />
+                          <img src={require('../../Images/MG.jpg')} alt="McGarrett" />
+
+                <h2>Welcome to McGarrett's Kennels<br />
                     <small>Loving care when you're not there.</small>
                 </h2>
                 <address>
