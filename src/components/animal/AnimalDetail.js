@@ -44,10 +44,3 @@ class AnimalDetail extends Component {
     }}
 
 export default AnimalDetail;
-      // if (!this.state.loadingStatus && this.state.isAnimalValid) {
-
-//   } else {
-//     return <Redirect to="/"/>
-//     }
-//   }
-// }
