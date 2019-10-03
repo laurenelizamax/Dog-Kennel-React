@@ -19,16 +19,12 @@ class Login extends Component {
     e.preventDefault()
     /*
         For now, just store the email and password that
-        the customer enters into local storage.
+        the  customer enters into local storage.
     */
-    localStorage.setItem(
-        "credentials",
-        JSON.stringify({
-            email: this.state.email,
-            password: this.state.password
-        })
-    )
-    this.props.history.push("/");
+   e.preventDefault()
+        let credentials = {email: this.state.email, password: this.state.password}
+        this.props.setUser(credentials);
+        this.props.history.push("/");
 
   }
 
@@ -43,7 +39,6 @@ class Login extends Component {
                     placeholder="Email address"
                     required="" autoFocus="" />
                 <label htmlFor="inputEmail">Email address</label>
-
                 <input onChange={this.handleFieldChange} type="password"
                     id="password"
                     placeholder="Password"
