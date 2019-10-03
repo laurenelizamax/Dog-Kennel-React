@@ -12,12 +12,6 @@ class AnimalDetail extends Component {
       photo: "",
       loadingStatus: true
   }
-  handleDelete = () => {
-    //invoke the delete function in AnimalManger and re-direct to the animal list.
-    this.setState({loadingStatus: true})
-    AnimalManager.delete(this.props.animalId)
-    .then(() => this.props.history.push("/animals"))
-}
 
   componentDidMount(){
     console.log("AnimalDetail: ComponentDidMount");
@@ -35,7 +29,6 @@ class AnimalDetail extends Component {
 
   render() {
     if (this.state.loadingStatus)  return <p>Loading...</p>
-  
     return (
       <div className="card">
         <div className="card-content">

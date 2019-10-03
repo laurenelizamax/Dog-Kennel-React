@@ -9,27 +9,29 @@ import React, { Component } from 'react'
         state = {
             animals: [],
         }
-        deleteAnimal = id => {
-            AnimalManager.delete(id)
-            .then(() => {
-              AnimalManager.getAll()
-              .then((newAnimals) => {
-                this.setState({
-                    animals: newAnimals
-                })
-              })
-            })
-          }
-
-    componentDidMount(){
-        // console.log("ANIMAL LIST: ComponentDidMount");
-        //getAll from AnimalManager and hang on to that data; put it in state
+        // deleteAnimal = id => {
+        //     AnimalManager.delete(id)
+        //     .then(() => {
+        //       AnimalManager.getAll()
+        //       .then((newAnimals) => {
+        //         this.setState({
+        //             animals: newAnimals
+        //         })
+        //       })
+        //     })
+        //   }
+    getData= () => {
         AnimalManager.getAll()
         .then((animals) => {
             this.setState({
                 animals: animals
             })
         })
+    }
+    componentDidMount(){
+        // console.log("ANIMAL LIST: ComponentDidMount");
+        //getAll from AnimalManager and hang on to that data; put it in state
+        this.getData()
     }
 
     render(){
@@ -48,7 +50,7 @@ import React, { Component } from 'react'
         {this.state.animals.map(animal =>
         <AnimalCard key={animal.id} 
                                         animal={animal} 
-                                        deleteAnimal={this.deleteAnimal}
+                                        getData={this.getData}
                                         {...this.props}
                                         />
       )}
