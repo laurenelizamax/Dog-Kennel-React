@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import AnimalManager from '../../modules/AnimalManager';
 import {firstLetterCase} from '../../modules/helpers'
-import { Link } from "react-dom"
 // import { Redirect } from "react-router-dom";
 import './AnimalDetail.css'
 
@@ -36,17 +35,14 @@ class AnimalDetail extends Component {
           <picture>
             <img src={require(`../../Images/${this.state.photo}`)} alt="My Dog" />
           </picture>
-          <h2>Date: <span className="card-journal">{firstLetterCase(this.props.entry.date)}</span></h2>
-          <p>Concepts Covered: {firstLetterCase(this.props.entry.concepts)}</p>
-          <p>Entry: {firstLetterCase(this.props.entry.entry)}</p>
-          <p>Mood: {firstLetterCase(this.props.entry.mood)}</p>
-          <Link to={ `/entries/${this.props.entry.id}`}><button className="cardButton">Details</button></Link>
+          <h2>Name: <span className="card-animal">{firstLetterCase(this.state.name)}</span></h2>
+          <p>Breed: {firstLetterCase(this.state.breed)}</p>
           <button type="button" className="cardButton"
-        onClick={() => {this.props.history.push(`/entries/${this.props.entry.id}/edit`)}}>Edit</button>
-          <button type="button" className="cardButton" onClick={() => this.handleDelete(this.props.entry.id)}>Discharge</button>
+        onClick={() => {this.props.history.push(`/animals/${this.props.animalId}/edit`)}}>Edit</button>
+          <button type="button" className="cardButton" onClick={() => this.handleDelete(this.state.animal.id)}>Discharge</button>
         </div>
       </div>
     );
     }}
 
-export default AnimalDetail;
+    export default AnimalDetail;
